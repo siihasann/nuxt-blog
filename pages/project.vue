@@ -1,3 +1,10 @@
+<script setup>
+definePageMeta({
+    layout: 'app'
+})
+</script>
+
+
 <template>
     Project Page
     <p>

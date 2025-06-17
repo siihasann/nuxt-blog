@@ -1,3 +1,9 @@
+<script setup>
+definePageMeta({
+    layout: 'blog'
+})
+</script>
+
 <template>
     <h1>Blog Page</h1>
     <p>

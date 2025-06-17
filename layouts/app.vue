@@ -8,6 +8,6 @@
                 <li><NuxtLink to="/project">Project</NuxtLink></li>
             </ul>
         </nav>
-  </div>
-  <slot/>
+    </div>
+        <slot/>
 </template>
