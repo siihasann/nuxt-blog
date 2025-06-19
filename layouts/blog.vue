@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+    titleTemplate: '%s - Sans Porto'
+});
+</script>
+
 <template>
     <div class="container">
         <div class="col-left">

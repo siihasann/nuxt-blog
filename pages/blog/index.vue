@@ -1,7 +1,11 @@
 <script setup>
 definePageMeta({
     layout: 'blog'
-})
+});
+
+useHead({
+    title: 'Blog'
+});
 </script>
 
 <template>
