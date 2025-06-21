@@ -6,6 +6,9 @@ definePageMeta({
 useHead({
     title: 'Project'
 });
+
+const project = await $fetch('https://api.github.com/users/siihasann/repos')
+console.log(project);
 </script>
 
 

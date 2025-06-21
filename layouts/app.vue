@@ -30,7 +30,7 @@ useSeoMeta({
     <div class="container mx-auto">
         <Header/>
 
-        <main class="p-4">
+        <main class="p-4 mt-10">
             <slot/>
         </main>
     </div>
