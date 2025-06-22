@@ -1,43 +1,41 @@
-<script setup>
-useHead({
-    titleTemplate: '%s - Sans Porto',
-    link: [
-        {
-            rel: 'preconnect',
-            href: 'https://fonts.googleapis.com',
-        },
-        {
-            rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet',
-            crossorigin: 'anonymous',
-        },
-    ],
-});
-
+<script setup lang="ts">
 useSeoMeta({
-    title: 'My Amazing Site',
-    ogTitle: 'My Amazing Site',
-    description: 'This is my amazing site, let me tell you all about it.',
-    ogDescription: 'This is my amazing site, let me tell you all about it.',
-    ogImage: 'https://example.com/image.png',
-    twitterCard: 'summary_large_image',
-    twitterTitle: 'My Amazing Site',
-    twitterDescription: 'This is my amazing site, let me tell you all about it.',
-});
+  title: 'Sans Porto',
+  titleTemplate: '%s - Sans Porto',
+  description: 'Portfolio website showcasing my projects and skills',
+  ogTitle: 'Sans Porto - Developer Portfolio',
+  ogDescription: 'Portfolio website showcasing my projects and skills',
+  ogImage: '/og-image.png',
+  ogUrl: 'https://your-domain.com',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Sans Porto - Developer Portfolio',
+  twitterDescription: 'Portfolio website showcasing my projects and skills',
+  twitterImage: '/og-image.png'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
+  meta: [
+    { name: 'theme-color', content: '#ffffff' },
+    { name: 'theme-color', content: '#111827', media: '(prefers-color-scheme: dark)' }
+  ]
+})
 </script>
 
 <template>
-    <div class="container mx-auto">
-        <Header/>
+  <div class="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+    <Header />
 
-        <main class="p-4 mt-10">
-            <slot/>
-        </main>
-    </div>
+    <main class="container mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="mt-auto py-6 border-t border-gray-200 dark:border-gray-700">
+      <div class="container mx-auto px-4 text-center text-gray-600 dark:text-gray-400">
+        <p>&copy; 2025 Sans Porto. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 </template>
-
-<style>
-body {
-    font-family: 'Poppins', sans-serif;
-}
-</style>
