@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-    layout: 'blog'
+    layout: 'app'
 });
 
 useHead({
