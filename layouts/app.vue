@@ -5,7 +5,7 @@ useSeoMeta({
   description: 'Portfolio website showcasing my projects and skills',
   ogTitle: 'Sans Porto - Developer Portfolio',
   ogDescription: 'Portfolio website showcasing my projects and skills',
-  ogImage: '/og-image.png',
+  // ogImage: '/og-image.png',
   ogUrl: 'https://your-domain.com',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Sans Porto - Developer Portfolio',

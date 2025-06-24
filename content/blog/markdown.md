@@ -4,12 +4,12 @@ description: 'This is an example of a markdown document with various formatting 
 head:
   meta:
     - name: 'author'
-      content: 'aim'
+      content: 'hasan'
     - name: 'og:title'
       content: 'Markdown example content'
     - name: 'og:description'
       content: 'This is an example of a markdown document with various formatting elements.'
-publishedAt: 2025-06-22 20:11:00
+publishedAt: 2023-02-02 20:11:00
 toc: false
 ---
 

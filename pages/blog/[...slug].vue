@@ -7,6 +7,13 @@ definePageMeta({
 const { data: blog } = await useAsyncData(() =>
     queryCollection("content").path("/blog/markdown").first()
 );
+
+useSeoMeta({
+    title: blog.value?.title,
+    // description: blog.value?.description,
+    // name: blog.value?.name,
+    // author: blog.value?.author,
+})
 </script>
 
 <template>
